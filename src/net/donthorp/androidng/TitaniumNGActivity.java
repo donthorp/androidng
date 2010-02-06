@@ -4,11 +4,9 @@
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
-package com.appcelerator.androidng;
+package net.donthorp.androidng;
 
-import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.titanium.TiRootActivity;
 
-public class TitaniumNGApplication extends TiApplication
-{
-
+public class TitaniumNGActivity extends TiRootActivity {
 }
