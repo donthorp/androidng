@@ -1,0 +1,5 @@
+package ti.module.api;
+
+public class APIModule {
+
+}

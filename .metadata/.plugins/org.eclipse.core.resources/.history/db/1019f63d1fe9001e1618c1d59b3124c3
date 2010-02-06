@@ -1,0 +1,14 @@
+package com.appcelerator.androidng;
+
+import org.appcelerator.titanium.TiActivity;
+
+import android.os.Bundle;
+
+public class TitaniumNGActivity extends TiActivity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+}

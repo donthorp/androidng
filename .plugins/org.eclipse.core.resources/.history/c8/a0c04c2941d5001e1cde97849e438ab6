@@ -1,0 +1,40 @@
+package org.appcelerator.titanium.module.ui.searchbar;
+
+import org.appcelerator.titanium.TitaniumModuleManager;
+import org.appcelerator.titanium.module.ui.TitaniumBaseView;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.view.View;
+
+public class TitaniumSearchBar extends TitaniumBaseView {
+
+	public TitaniumSearchBar(TitaniumModuleManager tmm) {
+		super(tmm);
+		// TODO Auto-generated constructor stub
+	}
+
+	public TitaniumSearchBar(TitaniumModuleManager tmm, int defStyle) {
+		super(tmm, defStyle);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected void doOpen() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	protected View getContentView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected void processLocalOptions(JSONObject o) throws JSONException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package org.appcelerator.titanium.module.geo;
+
+import org.appcelerator.titanium.TitaniumModuleManager;
+import org.appcelerator.titanium.module.TitaniumBaseModule;
+
+import android.webkit.WebView;
+
+public class TitaniumGeolocation2 extends TitaniumBaseModule {
+
+	public TitaniumGeolocation2(TitaniumModuleManager manager, String moduleName) {
+		super(manager, moduleName);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void register(WebView webView) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

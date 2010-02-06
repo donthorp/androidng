@@ -1,0 +1,7 @@
+1257095168660	Rename type 'IMethodCaller'
+1257095244087	Rename type 'MethodCaller'
+1257095706719	Rename type 'TitaniumMethodCaller'
+1257095730099	Rename type 'ITitaniumMethodCaller'
+1257096449696	Rename local variable 'moduleMgr'
+1257434796804	Rename type 'TitaniumContact'
+1257434905569	Move compilation unit

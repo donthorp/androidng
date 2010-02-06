@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 1 element(s) from project &apos;tichooser&apos;&#x0A;- Original project: &apos;tichooser&apos;&#x0A;- Original element: &apos;tiapp.xml.orig&apos;" description="Delete element" element1="assets/tiapp.xml.orig" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1257436573992" subPackages="false" version="1.0"/>
+</session>

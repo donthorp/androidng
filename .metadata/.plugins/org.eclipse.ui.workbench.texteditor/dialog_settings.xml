@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="249" key="DIALOG_WIDTH"/>
+		<item value="146" key="DIALOG_Y_ORIGIN"/>
+		<item value="1167" key="DIALOG_X_ORIGIN"/>
+		<item value="403" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|CARBON|1|Lucida Grande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="SDK" key="selection"/>
+		<list key="findhistory">
+			<item value="SDK"/>
+			<item value="createBaseParams"/>
+			<item value="map"/>
+			<item value=","/>
+			<item value=":"/>
+			<item value="deleteCallback"/>
+			<item value="install"/>
+			<item value="unknown method"/>
+		</list>
+		<list key="replacehistory">
+			<item value=";"/>
+			<item value=" ="/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="307" key="DIALOG_Y_ORIGIN"/>
+		<item value="464" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

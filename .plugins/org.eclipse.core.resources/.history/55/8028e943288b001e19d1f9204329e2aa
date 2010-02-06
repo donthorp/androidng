@@ -1,0 +1,45 @@
+package org.appcelerator.titanium.util;
+
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
+
+public class TitaniumAnimationFactory
+{
+	public static TitaniumAnimationPair getAnimationFor(String style, int duration) {
+		TitaniumAnimationPair a = new TitaniumAnimationPair();
+
+		if (style.equals("fade-in")) {
+			a.in = new AlphaAnimation(0.0f, 1.0f);
+		} else if (style.equals("fade-out")) {
+			a.in = new AlphaAnimation(1.0f, 0.0f);
+		} else if (style.equals("slide-from-left")) {
+			a.in = new TranslateAnimation(
+				      Animation.RELATIVE_TO_SELF, -1.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+				      Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f);
+		} else if (style.equals("slide-from-top")) {
+			a.in = new TranslateAnimation(
+				      Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+				      Animation.RELATIVE_TO_SELF, -1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
+		} else if (style.equals("slide-from-right")) {
+			a.in = new TranslateAnimation(
+				      Animation.RELATIVE_TO_SELF, 1.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+				      Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f);
+		} else if (style.equals("slide-from-bottom")) {
+			a.in = new TranslateAnimation(
+				      Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+				      Animation.RELATIVE_TO_PARENT, 1.0f, Animation.RELATIVE_TO_PARENT, 0.0f);
+		}
+
+		if (a != null) {
+			a.in.setDuration(duration/2);
+			a.in.setInterpolator(new AccelerateDecelerateInterpolator());
+			a.out.setDuration(duration/2);
+			a.out.setInterpolator(new AccelerateInterpolator());
+		}
+
+		return a;
+	}
+}

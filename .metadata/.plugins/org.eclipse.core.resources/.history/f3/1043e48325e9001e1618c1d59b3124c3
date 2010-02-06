@@ -1,0 +1,50 @@
+Titanium = Ti = {};
+
+//NOTE: these are only for iPhone XHR bridge and will be compiled in conditionally (eventually)
+Ti._hexish = function(a){var r='';var e=a.length;var c=0;var h;while(c<e){h=a.charCodeAt(c++).toString(16);r+='\\u';var l=4-h.length;while(l-->0){r+='0'};r+=h;}return r;};
+Ti._bridgeEnc = function(o){return '<'+Ti._hexish(o)+'>';};
+
+
+Ti.JSON = {};
+Ti.JSON.stringify=function(object,bridge)
+{
+	var type = typeof object;
+	switch (type)
+	{
+		case 'undefined': case 'function': case 'unknown': return undefined;
+		case 'number': case 'boolean': return object;
+		case 'string':
+			if (bridge===1) return Ti._bridgeEnc(object);
+			return '"' + object.replace(/"/g,'"').replace(/\n/g,"\n").replace(/\r/g,"\r") + '"'; /*"*/
+	}
+	if((object===null) || (object.nodeType==1)) return 'null';
+	if(object.constructor.toString().indexOf('Date') != -1) {
+		return 'new Date(' + object.getTime() + ')';
+	}
+	if(object.constructor.toString().indexOf('Array') != -1)
+	{
+		var res='[';var pre='';var len=object.length;
+		for(var i=0;i<len;i++){
+			var value = object[i];
+			if(value !== undefined)value=Ti.JSON.stringify(value,bridge);
+			if(value !== undefined){res+=pre+value;pre=', ';}
+		}
+		return res + ']';
+	}
+	var objects = [];
+	for (var prop in object)
+	{
+		var value = object[prop];
+		if (value !== undefined){value = Ti.JSON.stringify(value,bridge);}
+		if (value !== undefined){objects.push(Ti.JSON.stringify(prop,bridge) + ': ' + value);}
+	}
+	return '{' + objects.join(',') + '}';
+};
+
+//TODO: certain statics can be placed in by compiler such as: platform, version, etc.
+//TODO: need to define setInterval, setTimeout in KJS
+
+
+// right now this is defined but this could just be compiled in along with the bridge switch below
+Ti._bridgeType = typeof(window)!='undefined' ? 1 : 2;
+

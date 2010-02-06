@@ -1,0 +1,23 @@
+package org.appcelerator.titanium;
+
+import org.mozilla.javascript.Scriptable;
+import org.mozilla.javascript.ScriptableObject;
+
+public class TiJSObject extends ScriptableObject {
+
+	public TiJSObject() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public TiJSObject(Scriptable arg0, Scriptable arg1) {
+		super(arg0, arg1);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getClassName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

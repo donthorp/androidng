@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change method &apos;void org.appcelerator.titanium.api.ITitaniumUserWindow.dispatchLoad(String eventName, String url)&apos; to &apos;public void dispatchLoad(String url)&apos;&#x0A;- Original project: &apos;titanium&apos;&#x0A;- Original element: &apos;org.appcelerator.titanium.api.ITitaniumUserWindow.dispatchLoad(...)&apos;&#x0A;- Removed parameters:&#x0A;     String eventName" delegate="false" deprecate="true" description="Change method &apos;dispatchLoad&apos;" flags="589830" id="org.eclipse.jdt.ui.change.method.signature" input="/src&lt;org.appcelerator.titanium.api{ITitaniumUserWindow.java[ITitaniumUserWindow~dispatchLoad~QString;~QString;" name="dispatchLoad" parameter1="String eventName 0 {deleted} {deleted} true" parameter2="String url 1 String url false" stamp="1259535370736" version="1.0"/>
+</session>

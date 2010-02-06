@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change method &apos;public void org.appcelerator.titanium.api.ITitaniumFile.deleteDirectory(boolean recursive)&apos; to &apos;public boolean deleteDirectory(boolean recursive)&apos;&#x0A;- Original project: &apos;titanium&apos;&#x0A;- Original element: &apos;org.appcelerator.titanium.api.ITitaniumFile.deleteDirectory(...)&apos;&#x0A;- New return type: &apos;boolean&apos;" delegate="false" deprecate="true" description="Change method &apos;deleteDirectory&apos;" flags="589830" id="org.eclipse.jdt.ui.change.method.signature" input="/src&lt;org.appcelerator.titanium.api{ITitaniumFile.java[ITitaniumFile~deleteDirectory~Z" name="deleteDirectory" parameter1="boolean recursive 0 boolean recursive false" return="boolean" stamp="1255721048008" version="1.0"/>
+</session>

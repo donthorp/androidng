@@ -1,0 +1,27 @@
+package org.appcelerator.titanium;
+
+import java.lang.ref.WeakReference;
+
+public class TiContext
+{
+	private WeakReference<TiActivity> weakActivity;
+	private TiJSContext jsContext;
+
+	public TiContext(TiActivity activity) {
+		weakActivity = new WeakReference<TiActivity>(activity);
+	}
+
+	TiActivity getActvity() {
+		return weakActivity.get();
+	}
+
+	public TiJSContext getJsContext() {
+		return jsContext;
+	}
+
+	public void setJsContext(TiJSContext jsContext) {
+		this.jsContext = jsContext;
+	}
+
+
+}

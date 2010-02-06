@@ -1,0 +1,1 @@
+INDEX VERSION 1.121+/Users/dthorp/projects/appcelerator/titanium_mobile/android/.metadata/.plugins/org.eclipse.wst.jsdt.core

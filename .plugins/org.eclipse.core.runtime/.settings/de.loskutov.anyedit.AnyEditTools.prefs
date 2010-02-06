@@ -1,0 +1,4 @@
+#Tue Jun 23 11:29:13 CDT 2009
+org.eclipse.jdt.ui.editor.tab.width=4
+eclipse.preferences.version=1
+disallowedInPath=\  "'*?><|\=(){};&$,%@\:

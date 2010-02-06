@@ -1,0 +1,28 @@
+package org.appcelerator.titanium;
+
+import android.app.Application;
+
+public class TiApplication extends Application
+{
+
+	public TiApplication() {
+
+	}
+
+	@Override
+	public void onCreate()
+	{
+		super.onCreate();
+	}
+
+	@Override
+	public void onLowMemory()
+	{
+		super.onLowMemory();
+	}
+
+	@Override
+	public void onTerminate() {
+		super.onTerminate();
+	}
+}

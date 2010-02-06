@@ -1,0 +1,31 @@
+/*
+ * Testing Script for bootup.
+ */
+
+var logData = "";
+function log(s) { logData += s + "\n"; }
+
+if (Ti && Titanium && Ti === Titanium) {
+	log("Ti === Titanium: Passed");
+} else {
+	log("Ti === Titanium: Failed");
+}
+
+if (Ti.JSON) {
+	log("Ti.JSON: Passed");
+} else {
+	log("Ti.JSON: Failed");
+}
+
+log("Done");
+
+function TestMe() {
+	var f = "DoNothing";
+}
+
+Ti.API.debug(123);
+Ti.API.log(1,"Hello");
+Titanium.API.warn("This is a warning", "ing");
+Ti.API.error(TestMe);
+
+logData;

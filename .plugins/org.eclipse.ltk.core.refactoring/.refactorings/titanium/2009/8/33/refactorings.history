@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change method &apos;public ITitaniumView org.appcelerator.titanium.api.ITitaniumUserWindow.getView(int i)&apos; to &apos;public String getViewKey(int i)&apos;&#x0A;- Original project: &apos;titanium&apos;&#x0A;- Original element: &apos;org.appcelerator.titanium.api.ITitaniumUserWindow.getView(...)&apos;&#x0A;- New name: &apos;getViewKey&apos;&#x0A;- New return type: &apos;String&apos;" delegate="false" deprecate="true" description="Change method &apos;getView&apos;" flags="589830" id="org.eclipse.jdt.ui.change.method.signature" input="/src&lt;org.appcelerator.titanium.api{ITitaniumUserWindow.java[ITitaniumUserWindow~getView~I" name="getViewKey" parameter1="int i 0 int i false" return="String" stamp="1249834368830" version="1.0"/>
+</session>

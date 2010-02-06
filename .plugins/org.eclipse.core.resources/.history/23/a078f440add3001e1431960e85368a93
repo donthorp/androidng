@@ -1,0 +1,7 @@
+package org.appcelerator.titanium.module.map;
+
+import com.google.android.maps.OverlayItem;
+
+public class TitaniumOverlayItem extends OverlayItem {
+
+}

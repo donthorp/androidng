@@ -1,0 +1,11 @@
+package org.appcelerator.titanium;
+
+
+public class TiActivity extends TiActivity
+{
+
+	public TiActivity() {
+		super();
+	}
+
+}

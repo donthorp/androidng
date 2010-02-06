@@ -1,0 +1,76 @@
+package org.appcelerator.titanium;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+
+import android.app.Application;
+
+public class TiApplication extends Application
+{
+	protected TiContext tictx;
+
+	public TiApplication() {
+	}
+
+	@Override
+	public void onCreate()
+	{
+		super.onCreate();
+
+//        Context cx = Context.enter();
+//        try
+//        {
+//            // FOR NOW (UNTIL WE CAN COMPILE IN PACKAGING) WE HAVE TO TURN OFF OPTIMIZATIONS
+//            cx.setOptimizationLevel(-1);
+//            Scriptable scope = cx.initStandardObjects();
+//
+//            tictx = new TiContext(cx, scope);
+//
+//            // bootstrap
+////            BufferedReader r = null;
+////
+////            try {
+////            	r = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/org/appcelerator/titanium/tiboot.js")));
+////            	cx.evaluateReader(scope, r, "tiboot.js", 0, null);
+////            } catch (IOException e) {
+////            	e.printStackTrace();
+////            	throw e;
+////            } finally {
+////            	if (r != null) {
+////            		try {
+////            			r.close();
+////            			r = null;
+////            		} catch (IOException ig) {
+////            			// Ignore
+////            		}
+////            	}
+////            }
+//
+//         }
+//        catch(Exception ex)
+//        {
+//            ex.printStackTrace();
+//            Context.exit();
+//        }
+	}
+
+	@Override
+	public void onLowMemory()
+	{
+		super.onLowMemory();
+	}
+
+	@Override
+	public void onTerminate() {
+		super.onTerminate();
+
+		if (tictx != null) {
+			tictx.cleanup();
+		}
+	}
+}

@@ -1,0 +1,14 @@
+1252449449991	Change method 'getFileStream'
+1252450242833	Change method 'getFileStream'
+1252452076689	Delete element
+1252452090520	Delete element
+1252452115996	Change method 'getFileStream'
+1252454762173	Delete element
+1252525212425	Change method 'readLine'
+1252525261715	Change method 'isOpen'
+1252525312787	Change method 'readLine'
+1252531523026	Change method 'read'
+1252531543709	Change method 'readLine'
+1252615000776	Rename package 'org.appcelerator.titanium.module.ui.picker'
+1252677949120	Rename type 'TitaniumSpinnerView'
+1252690855394	Change method 'selectRow'

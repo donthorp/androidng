@@ -1,0 +1,63 @@
+package org.appcelerator.titanium;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.appcelerator.androidng.R;
+
+
+public class TiActivity extends Activity
+{
+
+	public TiActivity() {
+		super();
+	}
+
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Bootstrap Application
+        BufferedReader br = null;
+        Object result = null;
+        try {
+        	br = new BufferedReader(new InputStreamReader(getAssets().open("Resources/app.js")));
+        	TiJSContext jsctx = getTiApp().getJSContext();
+        	if (jsctx != null) {
+        		result = jsctx.eval(br,"app.js");
+        	}
+        } catch (IOException e) {
+        	Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG);
+        	e.printStackTrace();
+        } finally {
+        	if (br != null) {
+        		try {
+        			br.close();
+        		} catch (IOException e) {
+        			// Ignore
+        		}
+        	}
+        }
+        getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(255, 3, 3, 3)));
+
+        // Testing stuff.
+//        setContentView(R.layout.main);
+//        TextView tv = (TextView)findViewById(R.id.t);
+//        if (tv != null) {
+//        	tv.setText(result.toString());
+//        }
+    }
+
+    public TiApplication getTiApp() {
+    	return (TiApplication) getApplication();
+    }
+}

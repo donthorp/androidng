@@ -1,0 +1,13 @@
+package org.appcelerator.titanium;
+
+import android.app.Activity;
+
+
+public class TiActivity extends Activity
+{
+
+	public TiActivity() {
+		super();
+	}
+
+}

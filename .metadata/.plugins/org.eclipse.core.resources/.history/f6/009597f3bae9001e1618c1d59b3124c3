@@ -1,0 +1,51 @@
+package org.appcelerator.titanium;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+import com.appcelerator.androidng.R;
+
+
+public class TiActivity extends Activity
+{
+
+	public TiActivity() {
+		super();
+	}
+
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Bootstrap Application
+        BufferedReader br = null;
+        try {
+        	br = new BufferedReader(new InputStreamReader(getAssets().open("Resources/app.js")));
+        	TiJSContext jsctx = getTiApp().getJSContext();
+        	if (jsctx != null) {
+        		jsctx.eval(br,"app.js");
+        	}
+        } catch (IOException e) {
+
+        } finally {
+        	if (br != null) {
+        		try {
+        			br.close();
+        		} catch (IOException e) {
+        			// Ignore
+        		}
+        	}
+        }
+
+        setContentView(R.layout.main);
+    }
+
+    public TiApplication getTiApp() {
+    	return (TiApplication) getApplication();
+    }
+}

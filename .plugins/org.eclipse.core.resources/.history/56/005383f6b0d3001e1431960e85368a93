@@ -1,0 +1,75 @@
+/**
+ * Appcelerator Titanium Mobile
+ * Copyright (c) 2009 by Appcelerator, Inc. All Rights Reserved.
+ * Licensed under the terms of the Apache Public License
+ * Please see the LICENSE included with this distribution for details.
+ */
+package org.appcelerator.titanium.module.map;
+
+import sun.reflect.generics.tree.BottomSignature;
+import android.content.Context;
+import android.graphics.Color;
+import android.view.Gravity;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+public class TitaniumOverlayItemView extends RelativeLayout
+{
+	ImageView leftImage;
+	ImageView rightImage;
+	TextView title;
+	TextView snippet;
+
+	public TitaniumOverlayItemView(Context context)
+	{
+		super(context);
+
+		setBackgroundColor(Color.argb(100, 20, 20, 20));
+		setGravity(Gravity.NO_GRAVITY);
+
+		RelativeLayout.LayoutParams params = null;
+
+		leftImage = new ImageView(context);
+		leftImage.setId(100);
+		params = createBaseParams();
+		params.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+		params.addRule(RelativeLayout.CENTER_VERTICAL);
+		addView(leftImage, params);
+
+		rightImage = new ImageView(context);
+		rightImage.setId(103);
+		params = createBaseParams();
+		params.addRule(ALIGN_PARENT_RIGHT);
+		params.addRule(CENTER_VERTICAL);
+		addView(rightImage, params);
+
+		title = new TextView(context);
+		title.setId(101);
+		title.setTextColor(Color.argb(255, 216,216,216));
+		title.setTextSize(18);
+		params = createBaseParams();
+		params.addRule(RIGHT_OF, 100);
+		params.addRule(ALIGN_TOP);
+		params.addRule(LEFT_OF, 103);
+		addView(title, params);
+
+		snippet = new TextView(context);
+		snippet.setId(102);
+		snippet.setTextColor(Color.argb(255, 192,192,192));
+		snippet.setTextSize(9);
+		params = createBaseParams();
+		params.addRule(RIGHT_OF, 100);
+		params.addRule(BELOW, 101);
+		params.addRule(LEFT_OF, 103);
+		addView(snippet, params);
+	}
+
+	private RelativeLayout.LayoutParams createBaseParams() {
+		return new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+	}
+
+	public void setItem(TitaniumOverlayItem item) {
+
+	}
+}

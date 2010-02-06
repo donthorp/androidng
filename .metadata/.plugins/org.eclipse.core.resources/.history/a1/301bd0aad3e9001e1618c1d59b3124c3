@@ -1,0 +1,16 @@
+/*
+ * Testing Script for bootup.
+ */
+
+var logData = "";
+function log(s) { logData += s + "\n"; }
+
+if (Ti && Titanium && Ti === Titanium) {
+	log("Ti === Titanium: Passed");
+} else {
+	log("Ti === Titanium: Failed");
+}
+
+log("Done");
+
+logData;

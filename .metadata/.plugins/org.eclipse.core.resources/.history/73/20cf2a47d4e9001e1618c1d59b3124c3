@@ -1,0 +1,63 @@
+package org.appcelerator.titanium;
+
+import java.io.IOException;
+import java.io.Reader;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+
+public class TiJSContext
+{
+	private Scriptable jsScope;
+
+	public TiJSContext()
+	{
+        Context ctx = enter();
+        try
+        {
+            jsScope = ctx.initStandardObjects();
+
+            jsScope.put("Titanium", jsScope, ctx.newObject(jsScope));
+            Scriptable ti = (Scriptable) jsScope.get("Titanium", jsScope);
+            jsScope.put("Ti", jsScope, ti);
+            ti.put("JSON", ti, ctx.newObject(ti));
+
+         } finally {
+        	 exit();
+         }
+	}
+
+	public Object eval(Reader r, String srcName)
+		throws IOException
+	{
+		Context ctx = enter();
+		try {
+			return ctx.evaluateReader(jsScope, r, srcName, 0, null);
+		} finally {
+			exit();
+		}
+	}
+
+	public Scriptable getScope()
+	{
+		return jsScope;
+	}
+
+	public void cleanup()
+	{
+		if (jsScope != null) {
+			jsScope = null;
+		}
+	}
+
+	private Context enter() {
+		Context ctx = Context.enter();
+        // FOR NOW (UNTIL WE CAN COMPILE IN PACKAGING) WE HAVE TO TURN OFF OPTIMIZATIONS
+		ctx.setOptimizationLevel(-1);
+		return ctx;
+	}
+
+	private void exit() {
+		Context.exit();
+	}
+}

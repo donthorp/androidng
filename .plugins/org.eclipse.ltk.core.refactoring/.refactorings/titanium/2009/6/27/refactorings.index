@@ -1,0 +1,5 @@
+1246335233663	Change method 'loadDrawable'
+1246335277815	Change method 'getResourceUrl'
+1246378060728	Rename method 'addListener'
+1246378624452	Change method 'addEventListener'
+1246381420326	Move 1 resources to 'drawable'

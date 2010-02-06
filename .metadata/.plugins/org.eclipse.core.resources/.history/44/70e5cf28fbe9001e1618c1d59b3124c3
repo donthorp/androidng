@@ -1,0 +1,82 @@
+package org.appcelerator.titanium.bridge;
+
+import java.lang.reflect.Method;
+
+import org.appcelerator.titanium.util.Log;
+import org.mozilla.javascript.FunctionObject;
+import org.mozilla.javascript.Scriptable;
+import org.mozilla.javascript.ScriptableObject;
+
+public class TiProxy extends ScriptableObject
+{
+	private static final String LCAT = "TiProxy";
+	private String className;
+	protected Object proxy;
+
+	public TiProxy(Scriptable scope, Scriptable prototype) {
+		super(scope, prototype);
+		className = "unknown";
+	}
+
+	@Override
+	public String getClassName() {
+		return className;
+	}
+
+	@Override
+	public Object get(String name, Scriptable start)
+	{
+		if(this.has(name, start)) {
+    		return super.get(name, start);
+		}
+
+		Log.i(LCAT, "Looking for name " + name);
+
+		Object o = NOT_FOUND;
+
+		if (proxy == null) {
+			// See if we can find an object for name
+
+			String moduleName = createModuleName(name);
+			try {
+				Class<?> c = Class.forName(createModuleName(name));
+				if (c != null) {
+					TiProxy p = new TiProxy(this.getParentScope(), this.getPrototype());
+					p.proxy = c.newInstance();
+					o = p;
+				}
+			} catch (Exception e) {
+				Log.e(LCAT, "No Module for name " + name + " expected " + moduleName);
+			}
+		} else {
+			Method[] methods = proxy.getClass().getMethods();
+			for(Method method : methods) {
+				if (method.getName().equals(name)) {
+					o = new FunctionObject(name, method, getParentScope());
+				}
+			}
+		}
+
+		return o;
+	}
+
+
+
+	private static String createModuleName(String name) {
+		StringBuilder sb = new StringBuilder(100);
+		sb.append("ti.module.")
+			.append(name.toLowerCase())
+			.append(".")
+			.append(name)
+			.append("Module");
+
+		return sb.toString();
+	}
+
+	private Class<?> classForName(String name) {
+		Class<?> clazz = null;
+
+
+		return clazz;
+	}
+}

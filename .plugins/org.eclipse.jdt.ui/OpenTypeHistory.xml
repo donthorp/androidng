@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module.ui{TitaniumUserWindow.java[TitaniumUserWindow" modifiers="1" timestamp="1258587420000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module.ui{TitaniumUIWebView.java[TitaniumUIWebView" modifiers="1" timestamp="1257969157000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium{TitaniumWebView.java[TitaniumWebView" modifiers="1" timestamp="1258691168000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module.ui{TitaniumBaseView.java[TitaniumBaseView" modifiers="1025" timestamp="1254860896000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.api{ITitaniumUserWindow.java[ITitaniumUserWindow" modifiers="513" timestamp="1257969157000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium{TitaniumApplication.java[TitaniumApplication" modifiers="1" timestamp="1258575430000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.util{TitaniumDelegate.java[TitaniumDelegate" modifiers="1" timestamp="1254417656000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module{TitaniumFilesystem.java[TitaniumFilesystem" modifiers="1" timestamp="1255057384000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module.api{TitaniumMemoryBlob.java[TitaniumMemoryBlob" modifiers="1" timestamp="1255967418000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.api{ITitaniumMapView.java[ITitaniumMapView" modifiers="513" timestamp="1256568949000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module{TitaniumBaseModule.java[TitaniumBaseModule" modifiers="1025" timestamp="1258662319000"/>
+<typeInfo handle="=titanium/\/opt\/android-sdk-mac_x86-1.6_r1\/platforms\/android-1.5\/android.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1253038481000"/>
+<typeInfo handle="=titanium/\/opt\/android-sdk-mac_x86-1.6_r1\/add-ons\/google_apis-3\/libs\/maps.jar&lt;com.google.android.maps(MapActivity.class[MapActivity" modifiers="1057" timestamp="1253038483000"/>
+<typeInfo handle="=titanium/\/opt\/android-sdk-mac_x86-1.6_r1\/platforms\/android-1.5\/android.jar&lt;java.util(HashMap.class[HashMap" modifiers="33" timestamp="1253038481000"/>
+<typeInfo handle="=titanium/\/opt\/android-sdk-mac_x86-1.6_r1\/platforms\/android-1.5\/android.jar&lt;android.widget(RelativeLayout.class[RelativeLayout" modifiers="33" timestamp="1253038481000"/>
+<typeInfo handle="=titanium/\/opt\/android-sdk-mac_x86-1.6_r1\/add-ons\/google_apis-3\/libs\/maps.jar&lt;com.google.android.maps(OverlayItem.class[OverlayItem" modifiers="33" timestamp="1253038483000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module.ui{TitaniumBaseNativeControl.java[TitaniumBaseNativeControl" modifiers="1025" timestamp="1258663771000"/>
+<typeInfo handle="=titanium/src&lt;org.appcelerator.titanium.module.ui.tableview{TitaniumTableViewCustomItem.java[TitaniumTableViewCustomItem" modifiers="1" timestamp="1258909337000"/>
+</typeInfoHistroy>

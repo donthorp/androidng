@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;titanium/src/org.appcelerator.titanium&apos;&#x0A;- Original project: &apos;CallerTestBed&apos;&#x0A;- Destination element: &apos;titanium/src/org.appcelerator.titanium&apos;&#x0A;- Original element: &apos;org.appcelerator.ctb.MethodCaller.java&apos;" description="Copy compilation unit" destination="=titanium/src&lt;org.appcelerator.titanium" element1="/src&lt;org.appcelerator.ctb{MethodCaller.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1257095229095" units="1" version="1.0"/>
+</session>

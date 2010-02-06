@@ -1,0 +1,19 @@
+package org.appcelerator.titanium.module.ui.searchbar;
+
+import org.appcelerator.titanium.TitaniumModuleManager;
+import org.appcelerator.titanium.module.ui.TitaniumBaseNativeControl;
+
+public class TitaniumSearchBar extends TitaniumBaseNativeControl {
+
+	public TitaniumSearchBar(TitaniumModuleManager tmm) {
+		super(tmm);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void createControl(TitaniumModuleManager tmm) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

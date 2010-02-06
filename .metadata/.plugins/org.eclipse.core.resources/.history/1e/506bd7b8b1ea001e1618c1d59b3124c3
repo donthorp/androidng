@@ -1,0 +1,15 @@
+package ti.module.accelerometer;
+
+import org.appcelerator.titanium.TiBaseModule;
+import org.appcelerator.titanium.TiContext;
+import org.appcelerator.titanium.bridge.TiProxy;
+
+public class AccelerometerModule
+	extends TiBaseModule
+{
+
+	public AccelerometerModule(TiContext tiContext, TiProxy tiProxy)
+	{
+		super(tiContext, tiProxy);
+	}
+}

@@ -1,0 +1,22 @@
+package org.appcelerator.titanium.module.ui.searchbar;
+
+import org.appcelerator.titanium.TitaniumModuleManager;
+import org.appcelerator.titanium.module.TitaniumBaseModule;
+
+import android.webkit.WebView;
+
+public class TitaniumSearchBarModule extends TitaniumBaseModule {
+
+	public TitaniumSearchBarModule(TitaniumModuleManager manager,
+			String moduleName) {
+		super(manager, moduleName);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void register(WebView webView) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="/System/Library/Frameworks/Ruby.framework/Versions/Current/usr" version="1.8.7" vmTypeId="org.rubypeople.rdt.launching.StandardVMType">
+<bootpath>
+<entry path="/Library/Ruby/Site/1.8"/>
+<entry path="/Library/Ruby/Site/1.8/universal-darwin10.0"/>
+<entry path="/Library/Ruby/Site"/>
+<entry path="/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby/1.8"/>
+<entry path="/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby/1.8/universal-darwin10.0"/>
+<entry path="/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/vendor_ruby"/>
+<entry path="/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8"/>
+<entry path="/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin10.0"/>
+</bootpath>
+</libraryInfo>
+<libraryInfo home="/Library/Genuitec/Common/plugins/org.jruby_1.1.6.8388p2" version="1.8.6" vmTypeId="org.rubypeople.rdt.launching.JRubyVMType">
+<bootpath>
+<entry path="/Library/Genuitec/Common/plugins/org.jruby_1.1.6.8388p2/lib/ruby/site_ruby/1.8"/>
+<entry path="/Library/Genuitec/Common/plugins/org.jruby_1.1.6.8388p2/lib/ruby/site_ruby"/>
+<entry path="/Library/Genuitec/Common/plugins/org.jruby_1.1.6.8388p2/lib/ruby/1.8"/>
+</bootpath>
+</libraryInfo>
+</libraryInfos>

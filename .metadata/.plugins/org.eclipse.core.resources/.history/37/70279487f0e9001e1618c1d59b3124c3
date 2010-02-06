@@ -1,0 +1,84 @@
+package ti.module.api;
+
+import org.appcelerator.titanium.util.Log;
+
+public class APIModule
+{
+	private static final String LCAT = "TiAPI";
+
+	public void debug(Object[] args) {
+		Log.d(LCAT, msgFrom(args));
+	}
+
+	public void info(Object[] args) {
+
+	}
+
+	public void warn(Object[] args) {
+
+	}
+
+	public void error(Object[] args) {
+
+	}
+
+	public void trace(Object[] args) {
+
+	}
+
+	public void notice(Object[] args) {
+
+	}
+
+	public void critical(Object[] args) {
+
+	}
+
+	public void log(int severity, String msg)
+	{
+		/*
+		TRACE: 1,
+		DEBUG: 2,
+		INFO: 3,
+		NOTICE: 4,
+		WARN: 5,
+		ERROR: 6,
+		CRITICAL: 7,
+		FATAL: 8*/
+		if (severity == 1)
+		{
+			Log.v(LCAT,msg);
+		}
+		else if (severity < 3)
+		{
+			Log.d(LCAT,msg);
+		}
+		else if (severity < 5)
+		{
+			Log.i(LCAT,msg);
+		}
+		else if (severity == 5)
+		{
+			Log.w(LCAT,msg);
+		}
+		else
+		{
+			Log.e(LCAT,msg);
+		}
+	}
+
+	private String msgFromArgs(Object[] args) {
+		String m = "";
+		if (args != null) {
+			if (args.length > 0) {
+				Object o = args[0];
+				if (o != null) {
+					m = args[0].toString();
+				} else {
+					m = "<null>";
+				}
+			}
+		}
+		return m;
+	}
+}

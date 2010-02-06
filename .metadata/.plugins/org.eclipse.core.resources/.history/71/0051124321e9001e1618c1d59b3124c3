@@ -1,0 +1,21 @@
+package org.appcelerator.titanium;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+
+public class TiContext
+{
+	private Context jsCtx;
+	private Scriptable jsScope;
+
+	public TiContext(Context jsCtx, Scriptable jsScope) {
+		this.jsCtx = jsCtx;
+		this.jsScope = jsScope;
+	}
+
+	public void cleanup() {
+		if (jsCtx != null) {
+			jsCtx.exit();
+		}
+	}
+}

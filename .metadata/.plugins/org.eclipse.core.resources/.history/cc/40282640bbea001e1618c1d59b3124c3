@@ -1,0 +1,22 @@
+package ti.module.accelerometer;
+
+import org.appcelerator.titanium.TiBaseModule;
+import org.appcelerator.titanium.TiContext;
+import org.appcelerator.titanium.bridge.TiProxy;
+import org.appcelerator.titanium.util.Log;
+
+public class AccelerometerModule
+	extends TiBaseModule
+{
+
+	public AccelerometerModule(TiContext tiContext, TiProxy tiProxy)
+	{
+		super(tiContext, tiProxy);
+	}
+
+	public int addEventListener(String name, Object f) {
+
+		Log.d("Accel", f.getClass().getName());
+		return 0;
+	}
+}

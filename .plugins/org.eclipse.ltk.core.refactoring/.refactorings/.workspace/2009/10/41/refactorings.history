@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;yql/src/com/appcelerator/yql/R.java&apos;" deleteContents="false" description="Delete resource &apos;yql/src/com/appcelerator/yql/R.java&apos;" element1="/yql/src/com/appcelerator/yql/R.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1254966773140"/>
+</session>

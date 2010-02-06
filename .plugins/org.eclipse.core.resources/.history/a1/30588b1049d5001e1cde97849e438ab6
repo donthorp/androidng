@@ -1,0 +1,28 @@
+package org.appcelerator.titanium.module.ui.searchbar;
+
+import org.appcelerator.titanium.TitaniumModuleManager;
+import org.appcelerator.titanium.config.TitaniumConfig;
+import org.appcelerator.titanium.module.TitaniumBaseModule;
+import org.appcelerator.titanium.util.Log;
+
+import android.webkit.WebView;
+
+public class TitaniumSearchBarModule extends TitaniumBaseModule
+{
+	private static final String LCAT = "TiSearchBarModule";
+	private static final boolean DBG = TitaniumConfig.LOGD;
+
+	public TitaniumSearchBarModule(TitaniumModuleManager manager, String moduleName) {
+		super(manager, moduleName);
+	}
+
+	@Override
+	public void register(WebView webView) {
+		if (DBG) {
+			Log.d(LCAT, "Registering TitaniumMap as " + moduleName + " using TitaniumMethod.");
+		}
+
+		tmm.registerInstance(moduleName, this);
+	}
+
+}

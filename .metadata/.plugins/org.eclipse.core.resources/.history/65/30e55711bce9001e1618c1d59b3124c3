@@ -1,0 +1,8 @@
+/*
+ * Testing Script for bootup.
+ */
+
+var test = "Failed";
+if (Ti === Titanium) {
+	test = "Passed";
+}

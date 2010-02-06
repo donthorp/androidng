@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;org.appcelerator.titanium.module.ui.TitaniumTableView.releaseSemaphore()&apos; to &apos;releaseModifySemaphore&apos;&#x0A;- Original project: &apos;titanium&apos;&#x0A;- Original element: &apos;org.appcelerator.titanium.module.ui.TitaniumTableView.releaseSemaphore()&apos;&#x0A;- Renamed element: &apos;org.appcelerator.titanium.module.ui.TitaniumTableView.releaseModifySemaphore()&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;releaseSemaphore&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;org.appcelerator.titanium.module.ui{TitaniumTableView.java[TitaniumTableView~releaseSemaphore" name="releaseModifySemaphore" references="true" stamp="1259433199137" version="1.0"/>
+</session>

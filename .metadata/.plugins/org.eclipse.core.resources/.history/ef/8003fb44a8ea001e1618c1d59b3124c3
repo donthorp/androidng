@@ -1,0 +1,5 @@
+package ti.module.accelerometer;
+
+public class AccelerometerModule {
+
+}

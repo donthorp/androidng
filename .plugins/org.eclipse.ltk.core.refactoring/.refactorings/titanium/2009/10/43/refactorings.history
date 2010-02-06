@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change method &apos;public String org.appcelerator.titanium.api.ITitaniumFile.read() throws IOException&apos; to &apos;public int read() throws IOException&apos;&#x0A;- Original project: &apos;titanium&apos;&#x0A;- Original element: &apos;org.appcelerator.titanium.api.ITitaniumFile.read()&apos;&#x0A;- New return type: &apos;int&apos;" delegate="false" deprecate="true" description="Change method &apos;read&apos;" element1="/\/System\/Library\/Frameworks\/JavaVM.framework\/Versions\/1.5.0\/Classes\/classes.jar&lt;java.io(IOException.class[IOException" flags="589830" id="org.eclipse.jdt.ui.change.method.signature" input="/src&lt;org.appcelerator.titanium.api{ITitaniumFile.java[ITitaniumFile~read" kind1="0" name="read" return="int" stamp="1255966162819" version="1.0"/>
+</session>

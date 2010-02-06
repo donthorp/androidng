@@ -1,0 +1,12 @@
+package org.appcelerator.titanium;
+
+import android.app.Application;
+
+public class TiApplication extends Application
+{
+
+	public TiApplication() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

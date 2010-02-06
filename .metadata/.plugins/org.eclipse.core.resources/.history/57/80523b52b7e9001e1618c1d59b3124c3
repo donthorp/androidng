@@ -1,0 +1,39 @@
+package org.appcelerator.titanium;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+import org.mozilla.javascript.ScriptableObject;
+
+public class TiJSContext
+{
+	private Scriptable jsScope;
+
+	public TiJSContext()
+	{
+        Context ctx = Context.enter();
+        try
+        {
+            // FOR NOW (UNTIL WE CAN COMPILE IN PACKAGING) WE HAVE TO TURN OFF OPTIMIZATIONS
+            ctx.setOptimizationLevel(-1);
+            jsScope = ctx.initStandardObjects();
+
+            jsScope.put("Titanium", jsScope, new TiJSObject(jsScope, null));
+            jsScope.put("Ti", jsScope, jsScope.get("Titanium", jsScope));
+
+         } finally {
+        	 Context.exit();
+         }
+	}
+
+	public Scriptable getScope()
+	{
+		return jsScope;
+	}
+
+	public void cleanup()
+	{
+		if (jsScope != null) {
+			jsScope = null;
+		}
+	}
+}

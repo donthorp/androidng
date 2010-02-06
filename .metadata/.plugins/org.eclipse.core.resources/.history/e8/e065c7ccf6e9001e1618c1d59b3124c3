@@ -1,0 +1,51 @@
+package org.appcelerator.titanium.bridge;
+
+import org.mozilla.javascript.Scriptable;
+import org.mozilla.javascript.ScriptableObject;
+
+import android.util.Log;
+
+public class TiProxy extends ScriptableObject
+{
+	private String className;
+	protected Object proxy;
+
+	public TiProxy(Scriptable scope, Scriptable prototype) {
+		super(scope, prototype);
+		className = "unknown";
+	}
+
+	@Override
+	public String getClassName() {
+		return className;
+	}
+
+	@Override
+	public Object get(String name, Scriptable start)
+	{
+		if(this.has(name, start)) {
+    		return super.get(name, start);
+		}
+
+		Object o = null;
+
+		if (proxy == null) {
+			// See if we can find an object for name
+
+			String moduleName = createModuleName(name);
+		}
+
+		return o;
+	}
+
+	private static String createModuleName(String name) {
+		StringBuilder sb = new StringBuilder(100);
+		sb.append("ti.module")
+			.append(name.toLowerCase())
+			.append(".")
+			.append(name)
+			.append("Module");
+
+		return sb.toString();
+	}
+}

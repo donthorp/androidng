@@ -1,0 +1,16 @@
+package org.appcelerator.titanium;
+
+import android.app.ActivityGroup;
+
+public class TiRootActivity extends ActivityGroup {
+
+	public TiRootActivity() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public TiRootActivity(boolean singleActivityMode) {
+		super(singleActivityMode);
+		// TODO Auto-generated constructor stub
+	}
+
+}

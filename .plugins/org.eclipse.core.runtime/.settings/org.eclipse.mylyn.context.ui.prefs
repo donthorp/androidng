@@ -1,0 +1,4 @@
+#Sun Sep 27 11:35:06 CDT 2009
+org.eclipse.mylyn.ui.perspectives.task.none=org.eclipse.jdt.ui.JavaPerspective
+eclipse.preferences.version=1
+org.eclipse.mylyn.context.ui.close.action.manage.warning=false

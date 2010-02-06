@@ -1,0 +1,107 @@
+package org.appcelerator.titanium.module.ui;
+
+import org.appcelerator.titanium.api.ITitaniumLifecycle;
+import org.appcelerator.titanium.api.ITitaniumView;
+
+import android.content.res.Configuration;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class TitaniumBaseView implements ITitaniumView {
+
+	public TitaniumBaseView() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int addEventListener(String eventName, String listener) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void dispatchApplicationEvent(String eventName, String data) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void dispatchConfigurationChange(Configuration newConfig) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean dispatchOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean dispatchPrepareOptionsMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void dispatchWindowFocusChanged(boolean hasFocus) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String getKey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public ITitaniumLifecycle getLifecycle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public View getNativeView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void hiding() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean isPrimary() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void processOptions(String options) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void removeEventListener(String eventName, int listenerId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void requestLayout() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void setKey(String key) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void setName(String name) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void showing() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

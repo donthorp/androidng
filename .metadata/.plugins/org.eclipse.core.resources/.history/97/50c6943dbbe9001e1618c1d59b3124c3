@@ -1,0 +1,7 @@
+/*
+ * Testing Script for bootup.
+ */
+
+if (Ti === Titanium) {
+	// Aliased
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;titanium/src/org/appcelerator/titanium/module/ui/TitaniumText&apos; to &apos;TitaniumText.java&apos;" description="Rename resource &apos;TitaniumText&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/org/appcelerator/titanium/module/ui/TitaniumText" name="TitaniumText.java" stamp="1247940917825" updateReferences="true"/>
+</session>

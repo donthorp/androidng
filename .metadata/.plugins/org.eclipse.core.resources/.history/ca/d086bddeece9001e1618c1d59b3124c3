@@ -1,0 +1,39 @@
+package ti.module.api;
+
+import org.appcelerator.titanium.util.Log;
+
+public class APIModule 
+{
+	public void log(int severity, String msg)
+	{
+		/*
+		TRACE: 1,
+		DEBUG: 2,
+		INFO: 3,
+		NOTICE: 4,
+		WARN: 5,
+		ERROR: 6,
+		CRITICAL: 7,
+		FATAL: 8*/
+		if (severity == 1)
+		{
+			Log.v(LCAT,msg);
+		}
+		else if (severity < 3)
+		{
+			Log.d(LCAT,msg);
+		}
+		else if (severity < 5)
+		{
+			Log.i(LCAT,msg);
+		}
+		else if (severity == 5)
+		{
+			Log.w(LCAT,msg);
+		}
+		else
+		{
+			Log.e(LCAT,msg);
+		}
+
+}

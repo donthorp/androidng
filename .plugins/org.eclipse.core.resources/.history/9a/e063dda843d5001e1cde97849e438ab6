@@ -1,0 +1,126 @@
+package org.appcelerator.titanium.module.ui.searchbar;
+
+import org.appcelerator.titanium.TitaniumModuleManager;
+import org.appcelerator.titanium.module.ui.TitaniumBaseNativeControl;
+import org.appcelerator.titanium.util.Log;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.os.Message;
+import android.widget.EditText;
+
+public class TitaniumSearchBar extends TitaniumBaseNativeControl
+{
+	private static final String LCAT = "TiSearchBar";
+
+	private static final int MSG_CHANGE = 300;
+	private static final int MSG_CANCEL = 301;
+	private static final int MSG_SETVALUE = 302;
+
+	public static final String CHANGE_EVENT = "change";
+
+	private CharSequence value;
+	private String color;
+	private String backgroundColor;
+	private boolean enableReturnKey;
+	private String fontSize;
+	private String fontWeight;
+	private boolean showCancel;
+	private String barColor;
+
+	public TitaniumSearchBar(TitaniumModuleManager tmm)
+	{
+		super(tmm);
+
+		eventManager.supportEvent(CHANGE_EVENT);
+		value = "";
+		showCancel = true;
+	}
+
+
+	@Override
+	protected void setLocalOptions(JSONObject o) throws JSONException
+	{
+		super.setLocalOptions(o);
+
+		if (o.has("value")) {
+			this.value = o.getString("value");
+		}
+		if (o.has("color")) {
+			this.color = o.getString("color");
+		}
+		if (o.has("backgroundColor")) {
+			this.backgroundColor = o.getString("backgroundColor");
+		}
+		if (o.has("enableReturnKey")) {
+			this.enableReturnKey = o.getBoolean("enableReturnKey");
+		}
+		if (o.has("fontSize")) {
+			this.fontSize = o.getString("fontSize");
+		}
+		if (o.has("fontWeight")) {
+			this.fontWeight = o.getString("fontWeight");
+		}
+		if (o.has("showCancel")) {
+			this.showCancel = o.getBoolean("showCancel");
+		}
+		if (o.has("barColor")) {
+			this.barColor = o.getString("barColor");
+		}
+	}
+
+
+	@Override
+	public void createControl(TitaniumModuleManager tmm)
+	{
+
+	}
+
+
+	@Override
+	public boolean handleMessage(Message msg)
+	{
+		if (msg.what == MSG_CHANGE) {
+			EditText tv = (EditText) control;
+			value = tv.getText().toString();
+			JSONObject o = new JSONObject();
+			try {
+				o.put("value", value);
+				eventManager.invokeSuccessListeners(CHANGE_EVENT, o.toString());
+			} catch (JSONException e) {
+				Log.e(LCAT, "Error setting value: ", e);
+			}
+		} else if (msg.what == MSG_SETVALUE) {
+			doSetValue((String) msg.obj);
+		} else if (msg.what == MSG_CANCEL) {
+			doSetValue((String) msg.obj);
+		}  /*else if (msg.what == MSG_RETURN) {
+			EditText tv = (EditText) control;
+			value = tv.getText().toString();
+			JSONObject o = new JSONObject();
+			try {
+				o.put("value", value);
+				eventManager.invokeSuccessListeners(RETURN_EVENT, o.toString());
+			} catch (JSONException e) {
+				Log.e(LCAT, "Error setting value: ", e);
+			}
+		}*/
+
+		return super.handleMessage(msg);
+	}
+
+	protected void doSetValue(String value)
+	{
+		EditText tv = (EditText) control;
+		this.value = value;
+		tv.setText(value);
+	}
+
+	public String getValue() {
+		return (String) value;
+	}
+
+	public void setValue(String value) {
+		handler.obtainMessage(MSG_SETVALUE, value).sendToTarget();
+	}
+}
