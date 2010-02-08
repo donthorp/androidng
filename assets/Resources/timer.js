@@ -36,26 +36,26 @@ var clearIntervalButton = Ti.UI.createButton({
 var timeoutTimer;
 setTimeoutButton.addEventListener("click", function(event){
 	var start = new Date().getTime();
-	timeoutTimer = Ti.setTimeout(function(){
+	timeoutTimer = setTimeout(function(){
 		var time = new Date().getTime() - start;
 		alert("reached timeout: " + time);
 	}, 1500);
 });
 
 clearTimeoutButton.addEventListener("click", function(event){
-	Ti.clearTimeout(timeoutTimer);
+	clearTimeout(timeoutTimer);
 });
 
 var count = 0;
 var intervalTimer;
 setIntervalButton.addEventListener("click", function(event){
-	intervalTimer = Ti.setInterval(function(){
+	intervalTimer = setInterval(function(){
 		intervalLabel.text = "count: "+(++count);
 	}, 500);
 });
 
 clearIntervalButton.addEventListener("click", function(event){
-	Ti.clearInterval(intervalTimer);
+	clearInterval(intervalTimer);
 });
 
 win.add(setTimeoutButton);

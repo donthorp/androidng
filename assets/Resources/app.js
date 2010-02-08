@@ -18,7 +18,7 @@ try {
 	// Use array so we can easily comment items in and out.
 	var files = [];
 
-	files.push('app-ks.js');
+	//files.push('app-ks.js');
 	//files.push('log.js');
 	//files.push('json.js');
 	//files.push('accelerometer.js');
@@ -34,7 +34,8 @@ try {
 	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
-
+	files.push("app-events.js")
+	
 	Ti.include(files);
 
 	Ti.API.info("Done with included files");
