@@ -31,7 +31,8 @@ try {
 	//files.push('ui.js');
 	//files.push('ui-imageview.js');
 	//files.push('ui-label.js');
-	files.push('ui-window.js');
+	files.push('ui-tabgroup.js');
+	//files.push('ui-window.js');
 	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');

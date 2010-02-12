@@ -1,8 +1,11 @@
-var win = Ti.UI.createWindow({
-	width:200,
-	height: 200,
-	backgroundColor: 'red'
+var win = Ti.UI.currentWindow;
+if (!win) {
+	win = Ti.UI.createWindow({
+		width:200,
+		height: 200,
+		backgroundColor: 'red'
 	});
+}
 
 var win2 = Ti.UI.createWindow({
 	left : 0, top : 0, width : 300, height : 100, backgroundColor : 'blue'

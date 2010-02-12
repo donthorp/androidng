@@ -1,13 +1,16 @@
-var win = Ti.UI.createWindow({
-	backgroundColor : '#081d35'
-});
+var win = Ti.UI.currentWindow;
+if (!win) {
+	win = Ti.UI.createWindow({
+		backgroundColor : '#081d35'
+	});
+}
 
 var l1 = Ti.UI.createLabel({
 	top : '5px', left : '10px', width : '100px', height : '40px',
 	text : 'Label 1:',
 	color : 'red',
 	highlightedColor : 'blue',
-	font : 'monospace',
+	font : {fontFamily : 'monospace'},
 	textAlignment : Ti.UI.TEXT_ALIGNMENT_LEFT
 });
 
@@ -17,7 +20,7 @@ var l2 = Ti.UI.createLabel({
 	color : 'red',
 	backgroundColor : 'white',
 	highlightedColor : 'blue',
-	font : 'serif',
+	font : {fontFamily : 'serif'},
 	textAlignment : Ti.UI.TEXT_ALIGNMENT_CENTER
 });
 
@@ -27,7 +30,7 @@ var l3 = Ti.UI.createLabel({
 	color : 'blue',
 	backgroundColor : 'yellow',
 	highlightedColor : 'blue',
-	font : 'sans-serif',
+	font : {fontFamily : 'sans-serif'},
 	textAlignment : Ti.UI.TEXT_ALIGNMENT_RIGHT
 });
 win.add(l1);
