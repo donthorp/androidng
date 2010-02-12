@@ -31,11 +31,12 @@ try {
 	//files.push('ui.js');
 	//files.push('ui-imageview.js');
 	//files.push('ui-label.js');
+	files.push('ui-window.js');
 	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
-	files.push("app-events.js")
-	
+	//files.push("app-events.js")
+
 	Ti.include(files);
 
 	Ti.API.info("Done with included files");
