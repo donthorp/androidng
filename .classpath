@@ -5,5 +5,17 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium"/>
 	<classpathentry kind="lib" path="lib/js.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-accelerometer"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-app"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-database"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-filesystem"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-geolocation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-json"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-map"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-media"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-network"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-platform"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-ui"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

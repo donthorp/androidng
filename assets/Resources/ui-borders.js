@@ -28,3 +28,10 @@ win.add(v1);
 win.add(message);
 
 win.open();
+
+var t = Ti.UI.create2DMatrix().translate(-200,200).scale(0);
+setTimeout(function() {
+win.animate({transform:t,delay:1000,duration:3000,opacity:0.1},function()
+{
+	//win.close();
+});},3000);
