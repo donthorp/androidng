@@ -17,5 +17,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-network"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-platform"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-xml"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-gesture"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
