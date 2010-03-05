@@ -28,6 +28,7 @@ try {
 	//files.push('map.js');
 	//files.push('media.js');
 	//files.push('media-camera.js');
+	files.push('network-online.js');
 	//files.push('ui.js');
 	//files.push('ui-borders.js');
 	//files.push('ui-imageview.js');
@@ -37,7 +38,7 @@ try {
 	//files.push('ui-pos1.js');
 	//files.push('ui-pos2.js');
 	//files.push('ui-pos3.js');
-	files.push('ui-pos4.js');
+	//files.push('ui-pos4.js');
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
