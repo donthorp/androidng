@@ -11,4 +11,10 @@ import org.appcelerator.titanium.TiApplication;
 public class TitaniumNGApplication extends TiApplication
 {
 
+	@Override
+	public void onCreate() {
+		super.onCreate();
+
+		appInfo = new TitaniumNGAppInfo(this);
+	}
 }
