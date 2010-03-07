@@ -18,6 +18,7 @@ try {
 	// Use array so we can easily comment items in and out.
 	var files = [];
 
+	files.push('analytics.js');
 	//files.push('app-ks.js');
 	//files.push('log.js');
 	//files.push('json.js');
@@ -28,7 +29,7 @@ try {
 	//files.push('map.js');
 	//files.push('media.js');
 	//files.push('media-camera.js');
-	files.push('network-online.js');
+	//files.push('network-online.js');
 	//files.push('ui.js');
 	//files.push('ui-borders.js');
 	//files.push('ui-imageview.js');
