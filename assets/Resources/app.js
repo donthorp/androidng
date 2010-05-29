@@ -14,22 +14,26 @@ try {
 	Ti.API.warn("Processing app.js");
 	Ti.API.info("Titanium Version: " + Ti.version);
 	Ti.API.info("Titanium Version #2: " + Ti.version);
+	Ti.API.debug("UUID: " + Ti.Platform.createUUID());
 
 	// Use array so we can easily comment items in and out.
 	var files = [];
 
-	files.push('analytics.js');
+	//files.push('analytics.js');
 	//files.push('app-ks.js');
 	//files.push('log.js');
 	//files.push('json.js');
 	//files.push('accelerometer.js');
 	//files.push('db.js');
 	//files.push('fs.js');
+	//files.push('fs-create-directory.js');
 	//files.push('geo.js');
+	//files.push('json-parse.js');
 	//files.push('map.js');
 	//files.push('media.js');
 	//files.push('media-camera.js');
 	//files.push('network-online.js');
+	files.push('ui-background-color.js');
 	//files.push('ui.js');
 	//files.push('ui-borders.js');
 	//files.push('ui-imageview.js');
@@ -44,10 +48,13 @@ try {
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
 	//files.push('ui-window.js');
+	//files.push('ui-window-crash.js');
 	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
 	//files.push("app-events.js")
+
+	//files.push("issue-1805.js"); //http://helpdesk.appcelerator.net/tickets/1805
 
 	Ti.include(files);
 

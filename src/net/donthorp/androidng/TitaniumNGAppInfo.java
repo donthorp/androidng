@@ -14,7 +14,7 @@ public class TitaniumNGAppInfo implements ITiAppInfo
 
 		properties.setBool("ti.android.debug", true);
 
-		properties.setString("ti.android.google.map.api.key", "0ZnKXkWA2dIAu2EM-OV4ZD2lJY3sEWE5TSgjJNg");
+		properties.setString("ti.android.google.map.api.key", "0Rq5tT4bUSXduTPp-FltklB_7oi4E7YRNic20sg");
 
 	}
 
@@ -56,5 +56,15 @@ public class TitaniumNGAppInfo implements ITiAppInfo
 
 	public String getGUID() {
 		return "77773f33fd1f4e95a06d2d217170866d";
+	}
+
+	@Override
+	public boolean isFullscreen() {
+		return false;
+	}
+
+	@Override
+	public boolean isNavBarHidden() {
+		return false;
 	}
 }
