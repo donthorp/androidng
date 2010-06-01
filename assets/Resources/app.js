@@ -29,11 +29,12 @@ try {
 	//files.push('fs-create-directory.js');
 	//files.push('geo.js');
 	//files.push('json-parse.js');
+	files.push('json-parse-xhr.js');
 	//files.push('map.js');
 	//files.push('media.js');
 	//files.push('media-camera.js');
 	//files.push('network-online.js');
-	files.push('ui-background-color.js');
+	//files.push('ui-background-color.js');
 	//files.push('ui.js');
 	//files.push('ui-borders.js');
 	//files.push('ui-imageview.js');
