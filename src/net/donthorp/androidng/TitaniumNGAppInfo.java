@@ -10,7 +10,7 @@ public class TitaniumNGAppInfo implements ITiAppInfo
 	private static final String LCAT = "AppInfo";
 
 	public TitaniumNGAppInfo(TiApplication app) {
-		TiProperties properties = app.getAppProperties();
+		TiProperties properties = app.getSystemProperties();
 
 		properties.setBool("ti.android.debug", true);
 

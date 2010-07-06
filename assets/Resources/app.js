@@ -25,15 +25,18 @@ try {
 	//files.push('json.js');
 	//files.push('accelerometer.js');
 	//files.push('db.js');
+	files.push('db-select-empty.js');
 	//files.push('fs.js');
 	//files.push('fs-create-directory.js');
 	//files.push('geo.js');
+	//files.push('geo-forward.js');
 	//files.push('json-parse.js');
-	files.push('json-parse-xhr.js');
+	//files.push('json-parse-xhr.js');
 	//files.push('map.js');
 	//files.push('media.js');
 	//files.push('media-camera.js');
 	//files.push('network-online.js');
+	//files.push('platform-width.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui.js');
 	//files.push('ui-borders.js');
@@ -56,6 +59,9 @@ try {
 	//files.push("app-events.js")
 
 	//files.push("issue-1805.js"); //http://helpdesk.appcelerator.net/tickets/1805
+	//files.push("issue-2460.js");  //http://helpdesk.appcelerator.net/tickets/2460
+	//files.push('issue-3023.js'); //http://helpdesk.appcelerator.net/tickets/3023
+	//files.push('issue-3046.js'); //http://helpdesk.appcelerator.net/tickets/3046
 
 	Ti.include(files);
 

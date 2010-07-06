@@ -20,7 +20,8 @@ data.push(Ti.UI.createTableViewRow({title: lotsOText, height: 'auto'}));
 
 // create table view
 var tableview = Titanium.UI.createTableView({
-	data:data
+	data:data,
+	minRowHeight : 40
 });
 
 // create table view event listener
