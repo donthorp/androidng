@@ -1,7 +1,6 @@
 // window container
 var win = Titanium.UI.createWindow({
-	height:80,
-	width:200
+	backgroundColor : 'black'
 });
 
 // black view
@@ -24,14 +23,24 @@ var message = Titanium.UI.createLabel({
 	xbottom:20
 });
 
-win.add(v1);
-win.add(message);
+var webView = Titanium.UI.createWebView({  
+	left: 0, top: 78, 
+	borderWidth: 1.0, 
+	borderColor: 'red',
+	backgroundColor: 'white', 
+	width: 320, height: 50 
+});
+
+//win.add(v1);
+//win.add(message);
+win.add(webView);
 
 win.open();
 
-var t = Ti.UI.create2DMatrix().translate(-200,200).scale(0);
+/*var t = Ti.UI.create2DMatrix().translate(-200,200).scale(0);
 setTimeout(function() {
 win.animate({transform:t,delay:1000,duration:3000,opacity:0.1},function()
 {
 	//win.close();
 });},3000);
+*/
