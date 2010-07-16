@@ -6,32 +6,33 @@ if (!win) {
 }
 
 var l1 = Ti.UI.createLabel({
-	top : '5px', left : '10px', width : '100px', height : '40px',
+	top : '5px', left : '10px', width : '100px', height : '60px',
 	text : 'Label 1:',
+	backgroundColor : 'pink',
 	color : 'red',
 	highlightedColor : 'blue',
 	font : {fontFamily : 'monospace'},
-	textAlignment : Ti.UI.TEXT_ALIGNMENT_LEFT
+	textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT
 });
 
 var l2 = Ti.UI.createLabel({
-	top : '55px', left : '10px', width : '100px', height : '40px',
+	top : '85px', left : '10px', width : '100px', height : '60px',
 	text : 'Label 1:',
 	color : 'red',
 	backgroundColor : 'white',
 	highlightedColor : 'blue',
 	font : {fontFamily : 'serif'},
-	textAlignment : Ti.UI.TEXT_ALIGNMENT_CENTER
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
 });
 
 var l3 = Ti.UI.createLabel({
-	top : '105px', left : '10px', width : '100px', height : '40px',
+	top : '165px', left : '10px', width : '100px', height : '60px',
 	text : 'Label 1:',
 	color : 'blue',
 	backgroundColor : 'yellow',
 	highlightedColor : 'blue',
 	font : {fontFamily : 'sans-serif'},
-	textAlignment : Ti.UI.TEXT_ALIGNMENT_RIGHT
+	textAlign : Ti.UI.TEXT_ALIGNMENT_RIGHT
 });
 win.add(l1);
 win.add(l2);
