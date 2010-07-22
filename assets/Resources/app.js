@@ -31,7 +31,7 @@ try {
 	//files.push('geo.js');
 	//files.push('geo-forward.js');
 	//files.push('json-parse.js');
-	files.push('json-parse-escaped.js');
+	//files.push('json-parse-escaped.js');
 	//files.push('json-parse-xhr.js');
 	//files.push('map.js');
 	//files.push('media.js');
@@ -55,6 +55,7 @@ try {
 	//files.push('ui-tableview-single-select.js');
 	//files.push('ui-window.js');
 	//files.push('ui-window-crash.js');
+	files.push('ui-window-stacked-lightweights.js');
 	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
