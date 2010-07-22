@@ -1,0 +1,16 @@
+{
+    "offers": {
+        "10": {
+            "offer_id": "10",
+            "offer_place": "Grooming | Studio",
+            "offer_name": "20 min gratis massage vid ryggvaxning!",
+            "offer_tester": "0",
+            "offer_end": "2010-07-31",
+            "offer_maximum_checkouts": "1000",
+            "offer_checkouts_per_customer": "2",
+            "offer_image": "logga_grooming.png",
+            "checkouts": 0,
+            "offer_ean_image": ""
+        }
+     }
+}

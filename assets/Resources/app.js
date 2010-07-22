@@ -31,6 +31,7 @@ try {
 	//files.push('geo.js');
 	//files.push('geo-forward.js');
 	//files.push('json-parse.js');
+	files.push('json-parse-escaped.js');
 	//files.push('json-parse-xhr.js');
 	//files.push('map.js');
 	//files.push('media.js');
@@ -42,7 +43,7 @@ try {
 	//files.push('ui-borders.js');
 	//files.push('ui-imageview.js');
 	//files.push('ui-imageview-file.js');
-	files.push('ui-label.js');
+	//files.push('ui-label.js');
 	//files.push('ui-menu.js');
 	//files.push('ui-pos1.js');
 	//files.push('ui-pos2.js');
@@ -51,6 +52,7 @@ try {
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
+	//files.push('ui-tableview-single-select.js');
 	//files.push('ui-window.js');
 	//files.push('ui-window-crash.js');
 	//files.push('test.js');
