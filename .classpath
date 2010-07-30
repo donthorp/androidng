@@ -21,5 +21,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-gesture"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-analytics"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-android"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

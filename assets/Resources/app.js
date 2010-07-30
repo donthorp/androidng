@@ -20,6 +20,8 @@ try {
 	var files = [];
 
 	//files.push('analytics.js');
+	files.push('android-activity-classname.js');
+	//files.push('android-activity-external.js');
 	//files.push('app-ks.js');
 	//files.push('log.js');
 	//files.push('json.js');
@@ -41,8 +43,10 @@ try {
 	//files.push('ui.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui-borders.js');
+	//files.push('ui-email-logfile.js');
 	//files.push('ui-imageview.js');
 	//files.push('ui-imageview-file.js');
+	//files.push('ui-imageview-assign.js');
 	//files.push('ui-label.js');
 	//files.push('ui-menu.js');
 	//files.push('ui-pos1.js');
@@ -54,7 +58,7 @@ try {
 	//files.push('ui-tableview-api-controls.js');
 	//files.push('ui-tableview-single-select.js');
 	//files.push('ui-window.js');
-	files.push('ui-window-close-event.js');
+	//files.push('ui-window-close-event.js');
 	//files.push('ui-window-crash.js');
 	//files.push('ui-window-stacked-lightweights.js');
 	//files.push('test.js');
