@@ -31,6 +31,11 @@
 				  android:label="Activity 1"
                   android:configChanges="keyboardHidden|orientation"
 		/>
+
+ 		<activity android:name=".SpeakActivity"
+				  android:label="Say It To Me"
+                  android:configChanges="keyboardHidden|orientation"
+		/>
  		
 		<activity android:name="org.appcelerator.titanium.TiActivity"
 			android:configChanges="keyboardHidden|orientation"
