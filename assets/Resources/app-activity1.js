@@ -1,20 +1,27 @@
 
-var win = null;
+var win = Ti.UI.currentWindow;
+var activity = Ti.Android.currentActivity;
 
-Ti.Android.currentActivity.addEventListener("start", function() {
-	win = Ti.UI.createWindow({
+var l = null;
+
+activity.addEventListener("create", function() {
+	var view = Ti.UI.createView({
 		backgroundColor : 'red',
 		top : 20, left : 20, width : 200, height : 50
 	});
 	
-	var l = Ti.UI.createLabel({
-		title : "I'm alive!!!!"
+	l = Ti.UI.createLabel({
+		text : "I'm alive!!!!"
 	});
 	
-	win.add(l);
+	view.add(l);
+	win.add(view);
 });
 
-Ti.Android.currentActivity.addEventListener("resume", function() {
-	Ti.API.info("RESUME");
-	win.open();
+activity.addEventListener("resume", function() {
+	var n = Ti.UI.createNotification({message : 'I have resumed!'});
+	n.show();
+	setTimeout(function() {
+		l.text = l.text + " and BREATHING!!!";	
+	}, 3000);
 });
