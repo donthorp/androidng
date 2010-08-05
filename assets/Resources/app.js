@@ -35,7 +35,7 @@ try {
 	//files.push('json-parse.js');
 	//files.push('json-parse-escaped.js');
 	//files.push('json-parse-xhr.js');
-	files.push('leak-create-window.js');
+	//files.push('leak-create-window.js');
 	//files.push('map.js');
 	//files.push('media.js');
 	//files.push('media-camera.js');
@@ -60,6 +60,7 @@ try {
 	//files.push('ui-tableview-single-select.js');
 	//files.push('ui-window.js');
 	//files.push('ui-window-close-event.js');
+	files.push('ui-window-closeonback.js');
 	//files.push('ui-window-crash.js');
 	//files.push('ui-window-stacked-lightweights.js');
 	//files.push('test.js');
