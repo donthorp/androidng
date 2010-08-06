@@ -6,7 +6,9 @@ var intent = Ti.Android.createIntent({
 	'data' : 'app://app-menu.js'
 });
 
-intent.putExtra("closeOnExit", false);
+intent.putExtra("closeOnExit", true);
+intent.putExtra("fullscreen", false);
+intent.putExtra("navBarHidden", true);
 
 var activity = Ti.Android.createActivity();
 activity.start(intent);
