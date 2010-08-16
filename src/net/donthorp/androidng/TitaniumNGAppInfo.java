@@ -15,7 +15,7 @@ public class TitaniumNGAppInfo implements ITiAppInfo
 		properties.setBool("ti.android.debug", true);
 
 		properties.setString("ti.android.google.map.api.key", "0Rq5tT4bUSXduTPp-FltklB_7oi4E7YRNic20sg");
-
+		properties.setBool("ti.android.root.reappears.restart", true);
 	}
 
 	public String getId() {
