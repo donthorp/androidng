@@ -60,7 +60,8 @@ try {
 	//files.push('ui-tableview-single-select.js');
 	//files.push('ui-window.js');
 	//files.push('ui-window-close-event.js');
-	files.push('ui-window-closeonback.js');
+	//files.push('ui-window-closeonback.js');
+	files.push('ui-window-exitonclose.js');
 	//files.push('ui-window-crash.js');
 	//files.push('ui-window-stacked-lightweights.js');
 	//files.push('test.js');
