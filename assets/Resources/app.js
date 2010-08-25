@@ -22,6 +22,7 @@ try {
 	//files.push('analytics.js');
 	//files.push('android-activity-classname.js');
 	//files.push('android-activity-external.js');
+	files.push('android-keyboard.js');
 	//files.push('app-ks.js');
 	//files.push('log.js');
 	//files.push('json.js');
@@ -65,7 +66,7 @@ try {
 	//files.push('ui-window-crash.js');
 	//files.push('ui-window-soft-input.js');
 	//files.push('ui-window-stacked-lightweights.js');
-	files.push('ui-window-text-softinput.js');
+	//files.push('ui-window-text-softinput.js');
 	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
