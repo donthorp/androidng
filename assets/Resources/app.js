@@ -22,11 +22,12 @@ try {
 	//files.push('analytics.js');
 	//files.push('android-activity-classname.js');
 	//files.push('android-activity-external.js');
-	files.push('android-keyboard.js');
+	//files.push('android-keyboard.js');
 	//files.push('app-ks.js');
 	//files.push('log.js');
 	//files.push('json.js');
 	//files.push('accelerometer.js');
+	files.push('camera.js');
 	//files.push('db.js');
 	//files.push('db-select-empty.js');
 	//files.push('fs.js');
