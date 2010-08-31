@@ -22,7 +22,7 @@ try {
 	//files.push('analytics.js');
 	//files.push('android-activity-classname.js');
 	//files.push('android-activity-external.js');
-	files.push('android-activity-menu.js');
+	//files.push('android-activity-menu.js');
 	//files.push('android-activity-pending.js');	
 	//files.push('app-ks.js');
 	//files.push('log.js');
@@ -37,6 +37,7 @@ try {
 	//files.push('json-parse.js');
 	//files.push('json-parse-escaped.js');
 	//files.push('json-parse-xhr.js');
+	files.push('jss.js');
 	//files.push('leak-create-window.js');
 	//files.push('map.js');
 	//files.push('media.js');

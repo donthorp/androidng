@@ -16,5 +16,7 @@ public class TitaniumNGApplication extends TiApplication
 		super.onCreate();
 
 		appInfo = new TitaniumNGAppInfo(this);
+		stylesheet = new ApplicationStylesheet();			
+		onAfterCreate();
 	}
 }
