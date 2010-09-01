@@ -27,7 +27,7 @@ try {
 	//files.push('log.js');
 	//files.push('json.js');
 	//files.push('accelerometer.js');
-	files.push('camera.js');
+	//files.push('camera.js');
 	//files.push('db.js');
 	//files.push('db-select-empty.js');
 	//files.push('fs.js');
@@ -60,6 +60,7 @@ try {
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
 	//files.push('ui-tableview-single-select.js');
+	files.push('ui-textarea-single-line.js');
 	//files.push('ui-window.js');
 	//files.push('ui-window-close-event.js');
 	//files.push('ui-window-closeonback.js');
