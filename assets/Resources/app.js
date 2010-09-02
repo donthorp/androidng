@@ -51,12 +51,13 @@ try {
 	//files.push('ui-imageview-file.js');
 	//files.push('ui-imageview-assign.js');
 	//files.push('ui-label.js');
+	files.push('ui-layout-scrollview-margins.js');
 	//files.push('ui-menu.js');
 	//files.push('ui-pos1.js');
 	//files.push('ui-pos2.js');
 	//files.push('ui-pos3.js');
 	//files.push('ui-pos4.js');
-	files.push('ui-slider-recalculate.js');
+	//files.push('ui-slider-recalculate.js');
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
