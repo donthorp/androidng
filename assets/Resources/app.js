@@ -43,6 +43,7 @@ try {
 	//files.push('media-camera.js');
 	//files.push('network-online.js');
 	//files.push('platform-width.js');
+	files.push('platform-openurl-mv4.js');
 	//files.push('ui.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui-borders.js');
@@ -51,7 +52,7 @@ try {
 	//files.push('ui-imageview-file.js');
 	//files.push('ui-imageview-assign.js');
 	//files.push('ui-label.js');
-	files.push('ui-layout-scrollview-margins.js');
+	//files.push('ui-layout-scrollview-margins.js');
 	//files.push('ui-menu.js');
 	//files.push('ui-pos1.js');
 	//files.push('ui-pos2.js');
