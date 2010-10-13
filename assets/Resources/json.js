@@ -1,6 +1,11 @@
 
 if (Ti.JSON) {
-	log("Ti.JSON: Passed");
+	Ti.API.info("Ti.JSON: Passed");
 } else {
-	log("Ti.JSON: Failed");
+	Ti.API.info("Ti.JSON: Failed");
 }
+
+var a = ['001', '002'];
+var b = Ti.JSON.stringify(a);
+
+Ti.API.error(b);

@@ -32,6 +32,10 @@ var l1 = Ti.UI.createLabel({
 	focusable : true,
 	backgroundFocusedImage : '/media/imageA.png'
 });
+l1.addEventListener('click', function(e) {
+	Ti.UI.createNotification({ message : 'ouch'}).show();
+});
+
 v.add(l1);
 
 var l2 = Ti.UI.createLabel({

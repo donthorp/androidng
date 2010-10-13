@@ -29,6 +29,7 @@ try {
 	//files.push('accelerometer.js');
 	//files.push('camera.js');
 	//files.push('db.js');
+	//files.push('db-install.js');
 	//files.push('db-select-empty.js');
 	//files.push('fs.js');
 	//files.push('fs-create-directory.js');
@@ -45,29 +46,38 @@ try {
 	//files.push('network-online.js');
 	//files.push('platform-width.js');
 	//files.push('platform-openurl-mv4.js');
+	files.push('quick-test.js');
 	//files.push('ui.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui-borders.js');
 	//files.push('ui-email-logfile.js');
+	//files.push('ui-parent-child-focus-source.js');
 	//files.push('ui-imageview.js');
 	//files.push('ui-imageview-file.js');
 	//files.push('ui-imageview-assign.js');
 	//files.push('ui-label.js');
-	files.push('ui-label-linkify.js');
-	//files.push('ui-layout-scrollview-margins.js');
+	//files.push('ui-label-linkify.js');
+	//files.push('ui-layout-scrollview-margins.js'); //focusable
+	//files.push('ui-layout-scrollview-post-open.js');
 	//files.push('ui-menu.js');
 	//files.push('ui-pos1.js');
 	//files.push('ui-pos2.js');
 	//files.push('ui-pos3.js');
 	//files.push('ui-pos4.js');
 	//files.push('ui-slider-recalculate.js');
+	//files.push('ui-slider-custom.js');
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
 	//files.push('ui-tableview-single-select.js');
+	//files.push('ui-text-keyboard-password.js');
 	//files.push('ui-textarea-single-line.js');
+	//files.push('ui-textview-hint.js');
+	//files.push('ui-vertical-layout-nested.js');
+	//files.push('ui-view-click.js');
 	//files.push('ui-window.js');
 	//files.push('ui-window-close-event.js');
+	//files.push('ui-window-close-2.js');
 	//files.push('ui-window-closeonback.js');
 	//files.push('ui-window-exitonclose.js');
 	//files.push('ui-window-crash.js');
@@ -78,6 +88,7 @@ try {
 	//files.push('picker.js');
 	//files.push('timer.js');
 	//files.push("app-events.js")
+	//files.push("webview-network-change.js");
 
 	//files.push("issue-1805.js"); //http://helpdesk.appcelerator.net/tickets/1805
 	//files.push("issue-2460.js");  //http://helpdesk.appcelerator.net/tickets/2460
@@ -85,6 +96,16 @@ try {
 	//files.push('issue-3046.js'); //http://helpdesk.appcelerator.net/tickets/3046
 	//files.push('issue-26391.js'); // http://developer.appcelerator.com/helpdesk/view/26391
 	//files.push('issue-40151.js'); // http://developer.appcelerator.com/helpdesk/view/40151
+	//files.push('issue-41421.js'); // http://developer.appcelerator.com/helpdesk/view/41241
+	//files.push('issue-41281.js'); // http://developer.appcelerator.com/helpdesk/view/41281
+	//files.push('issue-41631.js'); // http://developer.appcelerator.com/helpdesk/view/41631
+	//files.push('issue-43101.js'); //
+	//files.push('issue-46031.js');
+	//files.push('issue-47321.js');
+	//files.push('issue-47401.js');
+	//files.push('issue-47681.js');
+	//files.push('issue-48381.js');
+	//files.push('testlist.js');
 
 	Ti.include(files);
 
