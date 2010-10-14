@@ -5,9 +5,10 @@
 package net.donthorp.androidng;
 
 import java.util.HashMap;
-import org.appcelerator.titanium.ITiStylesheet;
 
-public class ApplicationStylesheet implements ITiStylesheet 
+import org.appcelerator.titanium.TiStylesheet;
+
+public class ApplicationStylesheet extends TiStylesheet 
 {
 	private static HashMap<String,HashMap<String,HashMap<String,String>>> classesMap;
 	private static HashMap<String,HashMap<String,HashMap<String,String>>> idsMap;
