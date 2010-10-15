@@ -21,9 +21,10 @@ try {
 
 	//files.push('analytics.js');
 	//files.push('android-activity-classname.js');
-	//files.push('android-activity-external.js');
+	//files.push('android-activity-external.js'); 
+	files.push('android-activity-launch.js');
 	//files.push('android-activity-menu.js');
-	files.push('android-activity-notification.js');	
+	//files.push('android-activity-notification.js');	
  	//files.push('android-activity-pending.js');	
 	//files.push('app-ks.js');
 	//files.push('log.js');
