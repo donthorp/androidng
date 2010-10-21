@@ -21,5 +21,13 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-gesture"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-analytics"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-android"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-bump"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-calendar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-contacts"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-facebook"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-i18n"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/titanium-yahoo"/>
+	<classpathentry kind="lib" path="/titanium/lib/commons-codec-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

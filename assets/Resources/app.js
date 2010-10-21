@@ -21,7 +21,11 @@ try {
 
 	//files.push('analytics.js');
 	//files.push('android-activity-classname.js');
-	//files.push('android-activity-external.js');
+	//files.push('android-activity-external.js'); 
+	files.push('android-activity-launch.js');
+	//files.push('android-activity-menu.js');
+	//files.push('android-activity-notification.js');	
+ 	//files.push('android-activity-pending.js');	
 	//files.push('android-keyboard.js');
 	//files.push('app-ks.js');
 	//files.push('log.js');
@@ -46,7 +50,7 @@ try {
 	//files.push('network-online.js');
 	//files.push('platform-width.js');
 	//files.push('platform-openurl-mv4.js');
-	files.push('quick-test.js');
+	//files.push('quick-test.js');
 	//files.push('ui.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui-borders.js');
@@ -107,7 +111,7 @@ try {
 	//files.push('issue-48381.js');
 	//files.push('testlist.js');
 
-	Ti.include(files);
+	Ti.include(files[0]); // Temporary hack until array form is fixed
 
 	Ti.API.info("Done with included files");
 	log("Done");

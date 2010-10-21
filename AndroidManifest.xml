@@ -26,11 +26,20 @@
             </intent-filter>
         </activity>
 
-<!-- 		<activity android:name=".Activity1"
+ 		<activity android:name=".Activity1"
 				  android:label="Activity 1"
                   android:configChanges="keyboardHidden|orientation"
 		/>
- -->		
+
+ 		<activity android:name=".SpeakActivity"
+				  android:label="Say It To Me"
+                  android:configChanges="keyboardHidden|orientation"
+		/>
+ 		
+ 		<activity android:name="ti.modules.titanium.android.JSActivity"
+			android:configChanges="keyboardHidden|orientation"
+		/>
+ 		
 		<activity android:name="org.appcelerator.titanium.TiActivity"
 			android:configChanges="keyboardHidden|orientation"
 			android:theme="@android:style/Theme"
