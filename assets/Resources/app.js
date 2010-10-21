@@ -22,7 +22,7 @@ try {
 	//files.push('analytics.js');
 	//files.push('android-activity-classname.js');
 	//files.push('android-activity-external.js'); 
-	files.push('android-activity-launch.js');
+	//files.push('android-activity-launch.js');
 	//files.push('android-activity-menu.js');
 	//files.push('android-activity-notification.js');	
  	//files.push('android-activity-pending.js');	
@@ -50,7 +50,7 @@ try {
 	//files.push('network-online.js');
 	//files.push('platform-width.js');
 	//files.push('platform-openurl-mv4.js');
-	//files.push('quick-test.js');
+	files.push('quick-test.js');
 	//files.push('ui.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui-borders.js');

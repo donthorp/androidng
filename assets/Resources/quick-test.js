@@ -1,50 +1,95 @@
-if (true) {
-var win = Ti.UI.createWindow({ 
-	backgroundImage : 'images/background-47681-sm.png'
-});
-
-var tableView = Ti.UI.createTableView({});
-win.add(tableView);
- 
-var row = Ti.UI.createTableViewRow({
-    height: 40,
-    className: 'messageSelectionRow'           
-});
-var image = Ti.UI.createImageView({ 
-    left: 5, 
-    top: 5, 
-    width: 'auto',
-    height: 'auto',
-    image: 'media/appcelerator_small.png'
-});
-var label = Ti.UI.createLabel({ 
-    left: 30, 
-    top: 5,
-    width: 'auto',
-    height: 'auto', 
-    textAlign:'left', 
-    color:'#FFFFFF', 
-    text: 'title'
-});
-row.add(image);
-row.add(label);
-tableView.appendRow(row);
-win.open({ animated : false});
-} else {
 Titanium.UI.setBackgroundColor('#000');
-var win = Titanium.UI.createWindow({  
-    title:'Test', backgroundColor:'#fff', fullscreen: true
+
+var newLatitude = '';
+var newLongitude = '';
+var newName = '';
+var newAddress = '';
+ 
+function createMap() {
+	var winMap = Titanium.UI.createWindow({
+		title:'winMap',
+		backgroundColor:'black',
+		navBarHidden: true
+	});
+	var annotation = Titanium.Map.createAnnotation({
+		latitude:newLatitude,
+		longitude:newLongitude,
+		title:newName,
+		subtitle:newAddress
+		//animate:true,
+		//pinImage:"../images/map-pin.png"
+	});	
+	var mapview = Titanium.Map.createView({
+		mapType: Titanium.Map.STANDARD_TYPE,
+		region:{latitude:newLatitude, longitude:newLongitude, latitudeDelta:0.01, longitudeDelta:0.01},
+		//animate:true,
+		regionFit:true,
+		userLocation:true,
+		top:117,
+		height:387,
+		annotations:[annotation]
+	});
+	mapview.selectAnnotation(mapview.annotations[0].title);
+	winMap.add(mapview);
+
+	winMap.open();
+}
+ 
+var main = Titanium.UI.createWindow({
 });
+ 
+var btn1 = Titanium.UI.createButton({
+    title: 'loc 1',
+    color:'#000',
+    top:100,
+    width:122,
+    height:50
+});
+ 
+btn1.addEventListener('click',function(e) {
+	newLatitude = 36.744256;
+	newLongitude = 3.0538639;
+	newName = 'City_1';
+	newAddress = 'Street_1';
+	createMap();
+});
+ 
+main.add(btn1);
 
-var views = [];
-for (var i = 0; i < 5; i++) {
-    views.push(
-        Ti.UI.createTableView({
-            data: [ Ti.UI.createTableViewRow({title: 'Row for view ' + i}) ]
-        })
-    );
-}
+var btn2 = Titanium.UI.createButton({
+    title: 'loc 2',
+    color:'#000',
+    top:180,
+    width:122,
+    height:50
+});
+ 
+btn2.addEventListener('click',function(e) {
+	newLatitude = 50.7456605;
+	newLongitude = 3.5998863;
+	newName = 'City_2';
+	newAddress = 'Street_2';
+	createMap();
+});
+ 
+main.add(btn2);
 
-win.add(Ti.UI.createScrollableView({ views: views }));
-win.open();
-}
+var btn3 = Titanium.UI.createButton({
+    title: 'loc 3',
+    color:'#000',
+    top:260,
+    width:122,
+    height:50
+});
+ 
+btn3.addEventListener('click',function(e) {
+	newLatitude = 49.282601;
+	newLongitude = -123.118057;
+	newName = 'City_3';
+	newAddress = 'Street_3';
+	createMap();
+});
+ 
+main.add(btn3);
+ 
+main.open();
