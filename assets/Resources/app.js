@@ -20,6 +20,7 @@ try {
 	var files = [];
 
 	//files.push('analytics.js');
+	files.push('android-activity-alarm.js');
 	//files.push('android-activity-classname.js');
 	//files.push('android-activity-external.js'); 
 	//files.push('android-activity-launch.js');
@@ -59,7 +60,7 @@ try {
 	//files.push('ui-pos2.js');
 	//files.push('ui-pos3.js');
 	//files.push('ui-pos4.js');
-	files.push('ui-slider-custom.js');
+	//files.push('ui-slider-custom.js');
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');

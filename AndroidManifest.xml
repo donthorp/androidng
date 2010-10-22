@@ -66,6 +66,7 @@
 			android:exported="false"
 		/>
 
+		<receiver android:name="ti.modules.titanium.android.alarmmanager.AlarmReceiver" />
     </application>
     <uses-sdk android:minSdkVersion="4" />
 
