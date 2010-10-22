@@ -6,12 +6,21 @@ var btn = Ti.UI.createButton({
 	title: 'Notify'
 });
 
+var a = Ti.Android.createActivity();
+if (a != null) {
+	var intent = a.getIntent();
+	if (intent != null) {
+		Ti.API.debug("Intent Data: " + intent.getStringExtra("alarmData"));
+	}
+}
+
 btn.addEventListener('click', function(e) {
 	var activity = Ti.Android.createActivity();
 	
 	var intent = Ti.Android.createIntent({
 		className : 'ti.modules.titanium.android.alarmmanager.AlarmReceiver'
 	});
+	intent.putExtra("alarmData", "Something");
 	
 	var pending = Ti.Android.createPendingIntent({ 
 		activity : activity,
@@ -28,7 +37,7 @@ btn.addEventListener('click', function(e) {
 	});
 });
 
-Ti.App.addEventListener('android:alarm', function() {
+Ti.App.addEventListener('android:alarm', function(e) {
 	var activity = Ti.Android.createActivity();
 
 	var intent = Ti.Android.createIntent({
@@ -38,6 +47,12 @@ Ti.App.addEventListener('android:alarm', function() {
 	});
 	
 	intent.addCategory('android.intent.category.LAUNCHER');
+	
+	Ti.API.error("EVENT: " + Ti.JSON.stringify(e));
+	
+	if (e !== null) {
+		intent.putExtra("alarmData", e.alarmData);
+	}
 
 	var pending = Ti.Android.createPendingIntent({ 
 		'activity' : activity,
@@ -56,6 +71,10 @@ Ti.App.addEventListener('android:alarm', function() {
 	});
 	
 	Ti.Android.NotificationManager.notify(1, notification);	
+});
+
+Ti.App.addEventListener('android:newIntent', function(e) {
+	Ti.API.error("New Intent: " + e.alarmData);
 });
 
 win.add(btn);
