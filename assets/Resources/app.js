@@ -20,7 +20,7 @@ try {
 	var files = [];
 
 	//files.push('analytics.js');
-	files.push('android-activity-alarm.js');
+	//files.push('android-activity-alarm.js');
 	//files.push('android-activity-classname.js');
 	//files.push('android-activity-external.js'); 
 	//files.push('android-activity-launch.js');
@@ -69,7 +69,7 @@ try {
 	//files.push('ui-window-close-event.js');
 	//files.push('ui-window-crash.js');
 	//files.push('ui-window-stacked-lightweights.js');
-	//files.push('test.js');
+	files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
 	//files.push("app-events.js")
