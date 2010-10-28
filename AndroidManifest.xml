@@ -54,6 +54,11 @@
 			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
 		/>
 
+		<activity android:name="org.appcelerator.titanium.TiModalActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+		/>
+
 		<activity
     		android:name="ti.modules.titanium.map.TiMapActivity"
     		android:configChanges="keyboardHidden|orientation"
