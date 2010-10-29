@@ -50,7 +50,7 @@ try {
 	//files.push('network-online.js');
 	//files.push('platform-width.js');
 	//files.push('platform-openurl-mv4.js');
-	files.push('quick-test.js');
+	//files.push('quick-test.js');
 	//files.push('ui.js');
 	//files.push('ui-background-color.js');
 	//files.push('ui-borders.js');
@@ -69,7 +69,7 @@ try {
 	//files.push('ui-pos3.js');
 	//files.push('ui-pos4.js');
 	//files.push('ui-slider-recalculate.js');
-	//files.push('ui-slider-custom.js');
+	files.push('ui-slider-custom.js');
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
