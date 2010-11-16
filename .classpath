@@ -28,6 +28,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-facebook"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-i18n"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/titanium-yahoo"/>
-	<classpathentry kind="lib" path="/titanium/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="/titanium/lib/ti-commons-codec-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -35,6 +35,7 @@ try {
 	//files.push('db.js');
 	//files.push('db-install.js');
 	//files.push('db-select-empty.js');
+	//files.push('db-pragma-return.js');
 	//files.push('fs.js');
 	//files.push('fs-create-directory.js');
 	//files.push('geo.js');
@@ -69,7 +70,7 @@ try {
 	//files.push('ui-pos3.js');
 	//files.push('ui-pos4.js');
 	//files.push('ui-slider-recalculate.js');
-	files.push('ui-slider-custom.js');
+	//files.push('ui-slider-custom.js');
 	//files.push('ui-tabgroup.js');
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
@@ -88,7 +89,7 @@ try {
 	//files.push('ui-window-soft-input.js');
 	//files.push('ui-window-stacked-lightweights.js');
 	//files.push('ui-window-text-softinput.js');
-	//files.push('test.js');
+	files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
 	//files.push("app-events.js")
@@ -109,6 +110,7 @@ try {
 	//files.push('issue-47401.js');
 	//files.push('issue-47681.js');
 	//files.push('issue-48381.js');
+	//files.push('issue-53271.js');
 	//files.push('testlist.js');
 
 	Ti.include(files[0]); // Temporary hack until array form is fixed

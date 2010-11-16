@@ -1,21 +1,53 @@
-// General testing stuff.
+Titanium.UI.setBackgroundColor('#000');
 
-Ti.myprop = "My Property";
-Ti.API.info("Ti.myprop: " + Ti.myprop);
+var tabGroup = Titanium.UI.createTabGroup();
 
-Ti.API.info("readOnly property: " + Ti.Test.readOnly);
-Ti.API.info("getReadOnly method: " + Ti.Test.getReadOnly());
+var win = Titanium.UI.createWindow({  
+    title:'Tab',
+    backgroundColor:'#fff'
+});
 
-Ti.API.info("Initial value for stringProp: " + Ti.Test.stringProp);
-Ti.API.info("Initial value for numberProp: " + Ti.Test.numberProp);
+var tab = Titanium.UI.createTab({
+    icon:'KS_nav_ui.png',
+    title:'Tab',
+    window:win
+});
 
-Ti.Test.stringProp = "The new value";
-Ti.Test.numberProp = 100;
+var alt = Titanium.UI.createAlertDialog({
+  title: 'clicked!',
+  message: ''
+});
 
-Ti.API.info("Value for stringProp: " + Ti.Test.stringProp);
-Ti.API.info("Value for numberProp: " + Ti.Test.numberProp);
 
-Ti.Test.setStringProp("New value 2").setNumberProp(300);
+var button = Titanium.UI.createButton({
+	title:'Fires synthetic event',
+	height:40,
+	width:200,
+	top:10
+});
 
-Ti.API.info("Value for stringProp: " + Ti.Test.stringProp);
-Ti.API.info("Value for numberProp: " + Ti.Test.numberProp);
+var button2 = Titanium.UI.createButton({
+	title:'Simple Click event',
+	height:40,
+	width:200,
+	top:100
+});
+
+button.addEventListener("click", function() {
+  win.fireEvent("foo");
+});
+
+button2.addEventListener("click", function() {
+  alt.show();
+});
+
+win.add(button);
+win.add(button2);
+
+win.addEventListener("foo", function() {
+  alt.show();
+});
+
+tabGroup.addTab(tab);
+
+tabGroup.open();
