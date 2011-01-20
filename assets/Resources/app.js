@@ -60,6 +60,7 @@ try {
 	//files.push('ui-imageview.js');
 	//files.push('ui-imageview-file.js');
 	//files.push('ui-imageview-assign.js');
+	//files.push('ui-imageview-remote.js');
 	//files.push('ui-label.js');
 	//files.push('ui-label-linkify.js');
 	//files.push('ui-layout-scrollview-margins.js'); //focusable
@@ -75,6 +76,7 @@ try {
 	//files.push('ui-tableview-api-basic.js');
 	//files.push('ui-tableview-api-controls.js');
 	//files.push('ui-tableview-single-select.js');
+	//files.push('ui-tableview-section.js');
 	//files.push('ui-text-keyboard-password.js');
 	//files.push('ui-textarea-single-line.js');
 	//files.push('ui-textview-hint.js');
@@ -89,11 +91,14 @@ try {
 	//files.push('ui-window-soft-input.js');
 	//files.push('ui-window-stacked-lightweights.js');
 	//files.push('ui-window-text-softinput.js');
-	files.push('test.js');
+	//files.push('test.js');
 	//files.push('picker.js');
 	//files.push('timer.js');
 	//files.push("app-events.js")
 	//files.push("webview-network-change.js");
+	
+	//files.push("lh-2579.js");
+	files.push("lh-2607.js");
 
 	//files.push("issue-1805.js"); //http://helpdesk.appcelerator.net/tickets/1805
 	//files.push("issue-2460.js");  //http://helpdesk.appcelerator.net/tickets/2460

@@ -1,53 +1,21 @@
-Titanium.UI.setBackgroundColor('#000');
-
-var tabGroup = Titanium.UI.createTabGroup();
-
-var win = Titanium.UI.createWindow({  
-    title:'Tab',
-    backgroundColor:'#fff'
+var window = Ti.UI.createWindow({
+    navBarHidden : true,
+    fullscreen : true,
+    backgroundImage : "media/default_splash_screen1.png",
+    exitOnClose : true,
 });
 
-var tab = Titanium.UI.createTab({
-    icon:'KS_nav_ui.png',
-    title:'Tab',
-    window:win
-});
-
-var alt = Titanium.UI.createAlertDialog({
-  title: 'clicked!',
-  message: ''
-});
-
-
-var button = Titanium.UI.createButton({
-	title:'Fires synthetic event',
-	height:40,
-	width:200,
-	top:10
-});
-
-var button2 = Titanium.UI.createButton({
-	title:'Simple Click event',
-	height:40,
-	width:200,
-	top:100
-});
-
-button.addEventListener("click", function() {
-  win.fireEvent("foo");
-});
-
-button2.addEventListener("click", function() {
-  alt.show();
-});
-
-win.add(button);
-win.add(button2);
-
-win.addEventListener("foo", function() {
-  alt.show();
-});
-
-tabGroup.addTab(tab);
-
-tabGroup.open();
+window.activity.onCreateOptionsMenu = function(e) {
+	var menu = e.menu;
+	
+	var m1 = menu.add({ title : "Image 1"});
+	var m2 = menu.add({ title : "Image 2"});
+	
+	m1.addEventListener('click', function(e) {
+		window.backgroundImage = "media/default_splash_screen1.png";
+	});
+	m2.addEventListener('click', function(e) {
+		window.backgroundImage = "media/default_splash_screen2.png";
+	});
+}
+window.open({ animated : false});

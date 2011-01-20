@@ -9,6 +9,7 @@ package net.donthorp.androidng;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.titanium.TiContext;
 
+
 public class TitaniumNGApplication extends TiApplication
 {
 

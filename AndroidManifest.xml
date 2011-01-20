@@ -36,10 +36,6 @@
                   android:configChanges="keyboardHidden|orientation"
 		/>
  		
- 		<activity android:name="ti.modules.titanium.android.JSActivity"
-			android:configChanges="keyboardHidden|orientation"
-		/>
- 		
 		<activity android:name="org.appcelerator.titanium.TiActivity"
 			android:configChanges="keyboardHidden|orientation"
 			android:theme="@android:style/Theme"
