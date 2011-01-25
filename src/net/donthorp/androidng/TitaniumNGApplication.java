@@ -18,6 +18,9 @@ public class TitaniumNGApplication extends TiApplication
 		super.onCreate();
 
 		appInfo = new TitaniumNGAppInfo(this);
+		postAppInfo();
+//		stylesheet = new ApplicationStylesheet();
+		postOnCreate();
 	}
 
 	@Override

@@ -98,7 +98,9 @@ try {
 	//files.push("webview-network-change.js");
 	
 	//files.push("lh-2579.js");
-	files.push("lh-2607.js");
+	//files.push("lh-2607.js");
+	//files.push("lh-2762.js");
+	files.push("lh-2885.js");
 
 	//files.push("issue-1805.js"); //http://helpdesk.appcelerator.net/tickets/1805
 	//files.push("issue-2460.js");  //http://helpdesk.appcelerator.net/tickets/2460
